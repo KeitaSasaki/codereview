@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.Landscape {
+  background-color: pink;
+}
+
+.Portrait {
+  background-color: gray;
+}
+
+.thumbnail {
+  border-radius: 10px;
+}
+
+.clickedThumbnail {
+  display: inline-block;
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: url(../images/black.png);
+}
+
+.overlay img {
+  display: inline-block;
+  position: absolute;
+  width: 800px;
+  box-shadow: 0px 0px 20px 0px #333;
+}
+
+#cursol {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background: #666;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 0px #333;
+}
+
+/*# sourceMappingURL=main.css.map */

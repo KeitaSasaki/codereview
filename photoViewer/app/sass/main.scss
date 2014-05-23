@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+//ウィンドウサイズが縦 < 横のモード
+.Landscape {
+  background-color: pink;
+}
+
+//ウィンドウサイズが縦 > 横のモード
+.Portrait {
+  background-color: gray;
+}
+
+//画像サムネイルのスタイル
+.thumbnail {
+    border-radius: 10px;
+}
+
+//クリックされたサムネイルのスタイル
+.clickedThumbnail {
+    //傾けてみる
+    display: inline-block;
+    transform: rotate(5deg);
+}
+
+
+
+
+
+//ここから画像拡大のためのCSS
+// 参考：http://www.finefinefine.jp/web/kiji1758/
+
+//画像表示部分のデフォルトスタイル
+.overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: url(../images/black.png);
+}
+
+//画像表示部分の画像表示時のスタイル
+.overlay img {
+  display: inline-block;
+  position: absolute;
+  width: 800px;
+  -webkit-box-shadow: 0px 0px 20px 0px #333;
+  -moz-box-shadow: 0px 0px 20px 0px #333;
+  box-shadow: 0px 0px 20px 0px #333;
+}
+
+//カーソルについてまわるテキストのスタイル
+#cursol {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background: #666;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 5px 0px #333;
+  -moz-box-shadow: 2px 2px 5px 0px #333;
+  box-shadow: 2px 2px 5px 0px #333;
+}
